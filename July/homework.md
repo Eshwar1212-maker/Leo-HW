@@ -1,26 +1,43 @@
-## Get familiar with arrays/dictionaries
+## 🔥 HOMEWORK SET — BEGINNER PYTHON (Age 12)
 
-Read these articles:
+**Problem 1 — Print Your Intro**
+Write a program that prints your name, age, and favorite hobby on 3 separate lines.
 
-- https://realpython.com/ref/stdlib/array/
+---
 
-- https://realpython.com/courses/dicts-arrays-ideal-data-structure/
+**Problem 2 — Simple Math**
+Store two numbers in variables and print their sum, difference, product, and quotient.
 
+---
 
-## Array HW
+**Problem 3 — Fix the Bug 🐛**
+What's wrong with this code?
+```python
+print("My name is" + 12)
+```
 
-1) Copy the array into your code editor, and loop through the array with a for loop printing every value:
+---
 
-names = ["eshwar", "leo", bob]
+**Problem 4 — List Basics**
+Create a list of 5 favorite foods. Print the first item, the last item, and the total count.
 
-2) In that same array, use an f string for every name, and print the name in the format 
+---
 
-"The name is Eshwar"
+**Problem 5 — Loop It**
+Write a loop that prints the numbers 1 through 10.
 
-"The name is Leo"
+---
 
-"The name is bob"
+**Problem 6 — Even or Odd**
+Loop from 1 to 20. Print `"Even"` or `"Odd"` for each number.
 
-How would you do this using an f string?
+---
 
-##
+**Problem 7 — Your First Function**
+Write a function called `greet` that takes a name and prints:
+`"Hello, [name]! Welcome to Python!"`
+
+---
+
+**Problem 8 — Dictionary Basics**
+Create a dictionary with 3 friends and their ages. Loop through it and print each name and age pair.
