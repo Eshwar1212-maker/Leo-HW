@@ -1,9 +1,10 @@
-name = "Leo"
+leo = {
+    "name": "Leo",
+    "age": 12,
+    "state": "Washington"
+}
 
-age = 12
+print(f"{leo["name"]}is {leo["age"]} years old and lives in {leo["state"]}")
 
 
-if age < 14:
-    print("Leo is in middle school")
-else:
-    print("Leo is not in middle school")
+# Leo is 12 years old and lives in Washington
