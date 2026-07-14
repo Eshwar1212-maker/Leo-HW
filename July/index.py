@@ -4,7 +4,12 @@ leo = {
     "state": "Washington"
 }
 
-print(f"{leo["name"]}is {leo["age"]} years old and lives in {leo["state"]}")
+
+leo["sport"] = "tennis"
 
 
-# Leo is 12 years old and lives in Washington
+
+leo["sport"] = "basketball"
+
+
+print(leo)

@@ -1,110 +1,97 @@
 # 🐍 Python Practice: Arrays & Dictionaries
+References
+
+- https://www.youtube.com/watch?v=zmIdC0_0BgY
+
+
+# 🐍 Python Practice: Arrays & Dictionaries — Level Up
 **Level:** Beginner–Intermediate | **Platform:** Varsity Tutors
 
 ---
 
-## Problem 1 — List Basics
-You have a list of numbers: `[4, 7, 2, 9, 1]`
+## Problem 1 — List Manipulation
+You're given this list:
+~~~python
+numbers = [3, 8, 1, 6, 2, 9, 4]
+~~~
 
 Write code that:
-1. Prints the **first** and **last** element
-2. Prints the **length** of the list
-3. Adds the number `15` to the end
+1. Sorts the list in **ascending order**
+2. Prints the **largest** number
+3. Prints the **sum** of all numbers
 
 Expected Output:
 ~~~
-First: 4
-Last: 1
-Length: 5
-[4, 7, 2, 9, 1, 15]
+Sorted: [1, 2, 3, 4, 6, 8, 9]
+Largest: 9
+Sum: 33
 ~~~
+
+💡 Hint: Look up `sorted()`, `max()`, and `sum()`
 
 ---
 
-## Problem 2 — Looping Through a List
-Given this list of fruits:
+## Problem 2 — Updating a Dictionary
+You're given this dictionary of item prices:
 ~~~python
-fruits = ["apple", "banana", "cherry", "mango"]
-~~~
-
-Write a loop that prints each fruit **with its index number**, like this:
-~~~
-0 - apple
-1 - banana
-2 - cherry
-3 - mango
-~~~
-
-💡 Hint: Look up `enumerate()`
-
----
-
-## Problem 3 — Dictionary Basics
-Create a dictionary called `student` with the following keys and values:
-- `name` → your own name
-- `age` → your age
-- `grade` → your current grade level
-
-Then:
-1. Print the student's **name**
-2. Add a new key `"favorite_subject"` with any value you want
-3. Print the **entire dictionary**
-
----
-
-## Problem 4 — Dictionary Lookup
-You're given this dictionary of scores:
-~~~python
-scores = {
-    "Alice": 88,
-    "Bob": 95,
-    "Carlos": 72,
-    "Diana": 91
+store = {
+    "apple": 1.50,
+    "banana": 0.75,
+    "milk": 3.00,
+    "bread": 2.50
 }
 ~~~
 
 Write code that:
-1. Prints **Bob's** score
-2. Loops through the dictionary and prints each name + score like:
-~~~
-Alice scored 88
-Bob scored 95
-Carlos scored 72
-Diana scored 91
-~~~
-
-💡 Hint: Use `.items()` to loop through key-value pairs
-
----
-
-## Problem 5 — Combining Both (Mini Challenge)
-You have a list of names:
-~~~python
-names = ["Alice", "Bob", "Carlos"]
-~~~
-
-And a separate list of scores:
-~~~python
-scores = [88, 95, 72]
-~~~
-
-Write code that combines them into a dictionary so it looks like:
-~~~python
-{"Alice": 88, "Bob": 95, "Carlos": 72}
-~~~
-
-Then print the dictionary.
-
-💡 Hint: Look up the `zip()` function
-
----
-
-## 🌟 Bonus — Filter the Dictionary
-Using the `scores` dictionary from Problem 4, write code that prints **only the students who scored above 85**.
+1. Increases the price of `"milk"` by `0.50`
+2. Removes `"banana"` from the dictionary
+3. Adds a new item `"eggs"` with a price of `2.99`
+4. Prints the final dictionary
 
 Expected Output:
 ~~~
-Alice: 88
-Bob: 95
-Diana: 91
+{'apple': 1.5, 'milk': 3.5, 'bread': 2.5, 'eggs': 2.99}
 ~~~
+
+💡 Hint: Use `.pop()` to remove a key
+
+---
+
+## Problem 3 — Count Word Frequency
+Given this list of words:
+~~~python
+words = ["cat", "dog", "cat", "bird", "dog", "cat"]
+~~~
+
+Write code that counts how many times each word appears and stores it in a dictionary.
+
+Expected Output:
+~~~
+{'cat': 3, 'dog': 2, 'bird': 1}
+~~~
+
+💡 Hint: Loop through the list. Use an `if` statement to check if the word is already in the dictionary.
+
+---
+
+## Problem 4 — Nested Dictionary
+You're given this nested dictionary of students:
+~~~python
+students = {
+    "Alice": {"grade": 90, "subject": "Math"},
+    "Bob": {"grade": 75, "subject": "Science"},
+    "Carlos": {"grade": 88, "subject": "English"}
+}
+~~~
+
+Write code that:
+1. Prints **Alice's grade**
+2. Changes **Bob's grade** to `82`
+3. Loops through and prints each student's name and subject like:
+~~~
+Alice studies Math
+Bob studies Science
+Carlos studies English
+~~~
+
+💡 Hint: Access nested values with two sets of brackets: `students["Alice"]["grade"]`
